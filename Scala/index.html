@@ -44,47 +44,49 @@ To Compare the Experience of Adopting Different Programming Languages</span>
 
 <!--======================================================-->
 <tr><td> General Intent/Goals </td><td>
-    (Description)
+Functional + OO on the JVM
 </td></tr>
 
 <tr><td> Competitors </td><td>
-    (Description)
+Clojure, Ceylon, Kotlin
 </td></tr>
 
 <tr><td> Issues &amp; Constraints </td><td>
-    (Description)
+Slow compile times; Standard library compatibility; Not FP enough for Haskell crowd; Significantly variety in language use;
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Ease of Use </td></tr>
 
 <tr><td> Complexity </td><td>
-    (Description)
+Some great simplifications over Java: No primitives, First-class functions, Type inference
+Some really complex stuff: Implicits, In-fix notation, Curried functions, Monads
 </td></tr>
 
 <tr><td> Learning Curve </td><td>
-    Gentle | Medium | Heavy
+    Heavy
 </td></tr>
 
 <tr><td> Install Process </td><td>
-    Single Install | Multiple Installs &amp; Configurations
+    REPL / scalac or Standard build tool (sbt)
 </td></tr>
 
 <tr><td> External Library Install Process </td><td>
-    Single Command | Download &amp; Configure
+    Maven &amp; Ivy repo support via sbt (or other build tools)
 </td></tr>
 
 <tr><td> Learning Tools </td><td>
-    <input type="checkbox"> Official Tutorial <br/>
-    <input type="checkbox"> Active Beginner Community <br/>
+    <input type="checkbox" checked> Official Tutorial <br/>
+    <input type="checkbox" checked> Active Beginner Community <br/>
     <input type="checkbox"> Old-style Newsgroup <br/>
-    <input type="checkbox"> Multiple (Confusing) Newsgroups <br/>
-    <input type="checkbox"> StackOverflow Group <br/>
+    <input type="checkbox" checked> Multiple (Confusing) Newsgroups <br/>
+    <input type="checkbox" checked> StackOverflow Group <br/>
 </td></tr>
 
 <tr><td> Popularity<br/>
 (Influences ease of learning/hiring)
 </td><td>
+    Right up there with R, Perl, and Shell:
     <a href="https://github.com/blog/2047-language-trends-on-github"> Github </a><br/>
     <a href="http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/"> Redmonk </a><br/>
     <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"> Tiobe </a><br/>
@@ -96,107 +98,101 @@ To Compare the Experience of Adopting Different Programming Languages</span>
 <tr><td class="subhead" colspan="2"> Community &amp; Culture </td></tr>
 
 <tr><td> Focus </td><td>
-    Culture of Kindness | Academic | Uncurated
+    Academic, Enterprise, Big Data
 </td></tr>
 
 <tr><td> Code of Conduct </td><td>
-    Proactive | Retroactive | Implied | None
+    Retroactive due to bad behavior
 </td></tr>
 
 <tr><td> Conference </td><td>
-    <input type="checkbox"> Central <br/>
-    <input type="checkbox"> Satellites <br/>
+    <input type="checkbox" checked> Central <br/>
+    <input type="checkbox" checked> Satellites <br/>
 </td></tr>
 
 <tr><td> Attitude Toward Beginners </td><td>
-    Friendly | <br>
-    Begrudgingly Tolerant | <br>
-    "If You Can't Stand the Heat..." | <br>
-    Hostile
+    Depends on the sub-community.  The Play and Spark communities are pretty friendly to noobs.
 </td></tr>
 
 <tr><td> Maturity Indicators </td><td>
-    <input type="checkbox"> StackOverflow Tag
+    <input type="checkbox" checked> StackOverflow Tag
 </td></tr>
 
 <tr><td> Ability to Fix Language Mistakes </td><td>
-    None | Under Duress | Proactive
+    Happens but difficult to balance with those that don't want upgrade pain.
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Tools </td></tr>
 
 <tr><td> Style Guide and level of enforcement </td><td>
-    None | Exists but Optional | Enforced with Tool
+    Exists but Optional
 </td></tr>
 
 <tr><td> Build </td><td>
-    None | De-Facto | Installed <br>
-    <b>Satisfaction:</b> [ High | Low ]
+    sbt is the standard but others can be used.  Understanding sbt is very difficult resulting in generally low satisfaction.
 </td></tr>
 
 <tr><td> Lint </td><td>
-    None | De-Facto | Installed
+    Exists but not default
 </td></tr>
 
 <tr><td> Test Framework </td><td>
-    None | De-Facto | Installed
+    ScalaTest &amp; Specs2 are most used but any JVM / JUnit test framework will work.
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Add-On Libraries </td></tr>
 
 <tr><td> Distribution System </td><td>
-    Ad-Hoc | Centralized | Hosted Repository
+    Maven Central is the primary but any Maven-style repo works.
 </td></tr>
 
 <tr><td> Installation Process </td><td>
-    Single Command |<br/>
-    Multiple Steps |<br/>
-    Download, Unpack &amp; Configure <br/>
+    Depends...  Activator / sbt is a simple download, unzip, and run process.
 </td></tr>
 
 <tr><td> Installation tool </td><td>
-    None | Multiple | Standard | Installed
+    Part of sbt.
 </td></tr>
 
 <tr><td> Semantic Versioning<br/>(For libraries as well as language itself) </td><td>
-    <input type="checkbox"> Standardized
+    Anything goes
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Governance </td></tr>
 
 <tr><td> IP ownership </td><td>
-    Company | Foundation | Individual
+    EPFL
 </td></tr>
 
 <tr><td> License </td><td>
-    Closed-Source | GPL* | Open-Source
+    3-clause BSD license
 </td></tr>
 
 <tr><td> Funding </td><td>
-    Single Source | Foundation | Informal
+    EPFL &amp; Typesafe
 </td></tr>
 
 <tr><td> Process to suggest new features </td><td>
-    Open | Closed | Partly Open
+    GitHub &amp; Scala Improvement Process
 </td></tr>
 
 <tr><td> Design Comes Primarily From </td><td>
-    Stakeholders | Experts | Users | Experts + Users
+    Typesafe &amp; EPFL
 </td></tr>
 
 <tr><td> Pull Request Validation </td><td>
-    <input type="checkbox"> System Exists
+    <input type="checkbox" checked> System Exists
 </td></tr>
 
 <tr><td> Contributor's License Agreement (CLA) </td><td>
-    <input type="checkbox"> Required
+    <input type="checkbox" checked> Required
 </td></tr>
 
 <tr><td> Release Rate, Open/Closed Bugs<br/>(indication of activeness) </td><td>
-    Good | Low
+    Good
 </td></tr>
 
 <!--######################################################-->
