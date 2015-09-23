@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Language Evaluation Checklist</title>
+<title>Language Evaluation: Python</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>
 * {
@@ -35,7 +35,7 @@ td.subhead {
 <!--======================================================-->
 <th colspan="2">
 
-Language Evaluation Checklist<br/>
+Language Evaluation: Python<br/>
 
 <span style="font-size:12pt;font-weight:normal">
 To Compare the Experience of Adopting Different Programming Languages</span>
@@ -44,165 +44,160 @@ To Compare the Experience of Adopting Different Programming Languages</span>
 
 <!--======================================================-->
 <tr><td> General Intent/Goals </td><td>
-    (Description)
+    Optimize programmer experience and productivity.
 </td></tr>
 
 <tr><td> Competitors </td><td>
-    (Description)
+    Ruby has some similarities but is not really a competitor.
 </td></tr>
 
 <tr><td> Issues &amp; Constraints </td><td>
-    (Description)
+    Cannot support native parallelism. (Supports native asynchronous programming. Supports paralellism with <code>multiprocessing</code> library).<br/>
+    Speedups sometimes require writing components in alternate language (C, Pyrex, etc.).<br/>
+    Static type checking is limited and optional (only available in Python 3.4 &amp; 3.5).
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Ease of Use </td></tr>
 
 <tr><td> Complexity </td><td>
-    (Description)
+    Focuses on simplicity and clarity above all.
 </td></tr>
 
 <tr><td> Learning Curve </td><td>
-    Gentle | Medium | Heavy
+    Gentle
 </td></tr>
 
 <tr><td> Install Process </td><td>
-    Single Install | Multiple Installs &amp; Configurations
+    One-click install
 </td></tr>
 
 <tr><td> External Library Install Process </td><td>
-    Single Command | Download &amp; Configure
+    Single Command
 </td></tr>
 
 <tr><td> Learning Tools </td><td>
-    <input type="checkbox"> Official Tutorial <br/>
-    <input type="checkbox"> Active Beginner Community <br/>
-    <input type="checkbox"> Multiple Books Targeted to Beginners <br/>
-    <input type="checkbox"> Old-style Newsgroup <br/>
-    <input type="checkbox"> Multiple (Confusing) Newsgroups <br/>
-    <input type="checkbox"> StackOverflow Group <br/>
+    <input type="checkbox" checked> Official Tutorial <br/>
+    <input type="checkbox" checked> Active Beginner Community <br/>
+    <input type="checkbox" checked> Multiple Books Targeted to Beginners <br/>
+    <input type="checkbox" checked> Old-style Newsgroup <br/>
+    <input type="checkbox" checked> Multiple Newsgroups, clearly delineated <br/>
+    <input type="checkbox" checked> StackOverflow Group <br/>
 </td></tr>
 
 <tr><td> Popularity<br/>
 (Influences ease of learning/hiring)
 </td><td>
-    <a href="https://github.com/blog/2047-language-trends-on-github"> Github </a><br/>
-    <a href="http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/"> Redmonk </a><br/>
-    <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"> Tiobe </a><br/>
-    <a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2015"> IEEE </a><br/>
-    <a href="http://pypl.github.io/PYPL.html"> PYPL </a><br/>
+    <a href="https://github.com/blog/2047-language-trends-on-github"> Github </a> [#5]<br/>
+    <a href="http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/"> Redmonk </a> [#4]<br/>
+    <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"> Tiobe </a> [#5]<br/>
+    <a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2015"> IEEE </a> [#4]<br/>
+    <a href="http://pypl.github.io/PYPL.html"> PYPL </a> [#3]<br/>
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Community &amp; Culture </td></tr>
 
 <tr><td> Focus </td><td>
-    Culture of Kindness | Academic | Uncurated
+    Culture of Kindness
 </td></tr>
 
 <tr><td> Code of Conduct </td><td>
-    Proactive | Retroactive | Implied | None
+    Proactive
 </td></tr>
 
 <tr><td> Conference </td><td>
-    <input type="checkbox"> Central <br/>
-    <input type="checkbox"> Satellites <br/>
+    <input type="checkbox" checked> Central <br/>
+    <input type="checkbox" checked> Satellites <br/>
 </td></tr>
 
 <tr><td> Attitude Toward Beginners </td><td>
-    Friendly | <br>
-    Begrudgingly Tolerant | <br>
-    "If You Can't Stand the Heat..." | <br>
-    Hostile
+    Extremely friendly
 </td></tr>
 
 <tr><td> Maturity Indicators </td><td>
-    <input type="checkbox"> StackOverflow Tag
+    <input type="checkbox" checked> StackOverflow Tag
 </td></tr>
 
 <tr><td> Ability to Fix Language Mistakes </td><td>
-    None | Under Duress | Proactive
+    Proactive (part of the reason for the change from 2 to 3).
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Tools </td></tr>
 
 <tr><td> Style Guide and level of enforcement </td><td>
-    None | Exists but Optional | Enforced with Tool
+    Exists but Optional; tools available to enforce.
 </td></tr>
 
 <tr><td> Build </td><td>
-    None | De-Facto | Installed <br>
-    <b>Satisfaction:</b> [ High | Low ]
+    Dynamic language; no build tool necessary.
 </td></tr>
 
 <tr><td> Lint </td><td>
-    None | De-Facto | Installed
+    Multiple linters are available.
 </td></tr>
 
 <tr><td> Test Framework </td><td>
-    None | De-Facto | Installed
+    Multiple test frameworks available; <code>py.test</code> seems to be the current favorite.
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Add-On Libraries </td></tr>
 
 <tr><td> Distribution System </td><td>
-    Ad-Hoc | Centralized | Hosted Repository
+    Centralized with hosted repository, although you can also install directly from a Github repository with a single command.
 </td></tr>
 
 <tr><td> Installation Process </td><td>
-    Single Command |<br/>
-    Multiple Steps |<br/>
-    Download, Unpack &amp; Configure <br/>
+    Single Command: <code>pip install library-name</code>
 </td></tr>
 
 <tr><td> Installation tool </td><td>
-    None | Multiple | Standard | Installed
+    Installed automatically with Python installation.
 </td></tr>
 
 <tr><td> Semantic Versioning<br/>(For libraries as well as language itself) </td><td>
-    <input type="checkbox"> Standardized
+    Support is available but nothing seems specified or enforced.
 </td></tr>
 
 <!--======================================================-->
 <tr><td class="subhead" colspan="2"> Governance </td></tr>
 
 <tr><td> IP ownership </td><td>
-    Company | Foundation | Individual
+    Python Software Foundation (PSF)
 </td></tr>
 
 <tr><td> License </td><td>
-    Closed-Source | GPL* | Open-Source
+    Open-Source, allows unlimited adaptation and reuse.
 </td></tr>
 
 <tr><td> Funding </td><td>
-    Single Source | Foundation | Informal
+    PSF
 </td></tr>
 
 <tr><td> Process to suggest new features </td><td>
-    Open | Closed | Partly Open
+    Open
 </td></tr>
 
 <tr><td> Design Comes Primarily From </td><td>
-    Stakeholders | Experts | Users | Experts + Users
+    Experts + Users
 </td></tr>
 
 <tr><td> Pull Request Validation </td><td>
-    <input type="checkbox"> System Exists
+    <input type="checkbox"> (I'm not sure) System Exists
 </td></tr>
 
 <tr><td> Contributor's License Agreement (CLA) </td><td>
-    <input type="checkbox"> Required
+    PSF Contributor Agreement
 </td></tr>
 
 <tr><td> Release Rate, Open/Closed Bugs<br/>(indication of activeness) </td><td>
-    Good | Low
+    Excellent
 </td></tr>
 
 <!--######################################################-->
 <tr><td colspan="2"><span style="font-size:9pt">
-*The GPL is sometimes used as a way to force companies to buy licenses.<br/>
 <b>Note:</b> Technical evaluation of language capabilities is not covered in this checklist, but in the
 <a href="https://github.com/BruceEckel/Language-Technical-Comparison">Language Technical Comparison</a> checklist.<br/>
 <i>Language Evaluation Checklist</i> by <a  href="http://www.MindviewInc.com">Bruce Eckel</a> is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Project hosted at <a href="https://github.com/BruceEckel/Language-Evaluation-Checklist">https://github.com/BruceEckel/Language-Evaluation-Checklist</a>.<br/>
