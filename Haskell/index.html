@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Language Evaluation: Scala</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+* {
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+th {
+  font-family: Lucida, sans-serif;
+  font-size: 28pt;
+  background-color: #5C5C3D;
+  color: #EBEBE0;
+}
+td {
+  font-family: Georgia, serif;
+  font-size: 14pt;
+}
+td.subhead {
+  font-family: Lucida, sans-serif;
+  font-size: 18pt;
+  color: #1F1F14;
+  background-color: #B8B894;
+  text-indent: 12pt;
+}
+</style>
+</head>
+<body>
+<table>
+
+<!--======================================================-->
+<th colspan="2">
+
+Language Evaluation: Scala<br/>
+
+<span style="font-size:12pt;font-weight:normal">
+To Compare the Experience of Adopting Different Programming Languages</span>
+
+</th>
+
+<!--======================================================-->
+<tr><td> General Intent/Goals </td><td>
+Pure functional general-purpose language
+</td></tr>
+
+<tr><td> Competitors </td><td>
+Other functional languages (Erlang/Elixir, F#, OCaml)
+</td></tr>
+
+<tr><td> Issues &amp; Constraints </td><td>
+CABAL; High learning curve; Lazy evaluation by default (debated)
+</td></tr>
+
+<!--======================================================-->
+<tr><td class="subhead" colspan="2"> Ease of Use </td></tr>
+
+<tr><td> Complexity </td><td>
+Great type inference; Powerful type classes; Monads, functors, etc.; Curried by default
+</td></tr>
+
+<tr><td> Learning Curve </td><td>
+    Heavy
+</td></tr>
+
+<tr><td> Install Process </td><td>
+    Haskell Platform (installer); From package manager
+</td></tr>
+
+<tr><td> External Library Install Process </td><td>
+    Through CABAL
+</td></tr>
+
+<tr><td> Learning Tools </td><td>
+    <input type="checkbox" checked> Official Tutorial <br/>
+    <input type="checkbox" checked> Active Beginner Community <br/>
+    <input type="checkbox" checked> Multiple Books Targeted to Beginners <br/>
+    <input type="checkbox"> Old-style Newsgroup <br/>
+    <input type="checkbox"> Multiple (Confusing) Newsgroups <br/>
+    <input type="checkbox" checked> StackOverflow Group <br/>
+</td></tr>
+
+<tr><td> Popularity<br/>
+(Influences ease of learning/hiring)
+</td><td>
+    <a href="https://github.com/blog/2047-language-trends-on-github"> Github</a> [Not in top 10]<br/>
+    <a href="http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/"> Redmonk</a> [#15]<br/>
+    <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"> Tiobe</a> [#40]<br/>
+    <a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2015"> IEEE</a> [#30]<br/>
+    <a href="http://pypl.github.io/PYPL.html"> PYPL</a> [Not in top 16]<br/>
+</td></tr>
+
+<!--======================================================-->
+<tr><td class="subhead" colspan="2"> Community &amp; Culture </td></tr>
+
+<tr><td> Focus </td><td>
+    Academic; Critical systems
+</td></tr>
+
+<tr><td> Code of Conduct </td><td>
+    None
+</td></tr>
+
+<tr><td> Conference </td><td>
+    <input type="checkbox" checked> Central <br/>
+    <input type="checkbox" checked> Satellites <br/>
+</td></tr>
+
+<tr><td> Attitude Toward Beginners </td><td>
+    Depends on the sub-community.
+    If you accidentally stumble into the wrong group, can be openly hostile.
+</td></tr>
+
+<tr><td> Maturity Indicators </td><td>
+    <input type="checkbox" checked> StackOverflow Tag
+</td></tr>
+
+<tr><td> Ability to Fix Language Mistakes </td><td>
+    Regular releases with new features
+</td></tr>
+
+<!--======================================================-->
+<tr><td class="subhead" colspan="2"> Tools </td></tr>
+
+<tr><td> Style Guide and level of enforcement </td><td>
+    Multiple exist but are mostly equivalent
+</td></tr>
+
+<tr><td> Build </td><td>
+    CABAL is the only popular build system
+</td></tr>
+
+<tr><td> Lint </td><td>
+    Many exist
+</td></tr>
+
+<tr><td> Test Framework </td><td>
+    Multiple exist; Functional purity makes testing simple
+</td></tr>
+
+<!--======================================================-->
+<tr><td class="subhead" colspan="2"> Add-On Libraries </td></tr>
+
+<tr><td> Distribution System </td><td>
+    Pretty much just CABAL
+</td></tr>
+
+<tr><td> Installation Process </td><td>
+    With installer from website, through distro package manager
+</td></tr>
+
+<tr><td> Installation tool </td><td>
+    Haskell Platform
+</td></tr>
+
+<tr><td> Semantic Versioning<br/>(For libraries as well as language itself) </td><td>
+    Anything goes
+</td></tr>
+
+<!--======================================================-->
+<tr><td class="subhead" colspan="2"> Governance </td></tr>
+
+<tr><td> IP ownership </td><td>
+    Glasgow Haskell Team (?)
+</td></tr>
+
+<tr><td> License </td><td>
+    3-clause BSD license
+</td></tr>
+
+<tr><td> Funding </td><td>
+    Volunteers
+</td></tr>
+
+<tr><td> Process to suggest new features </td><td>
+    By GHC mailing list, Trac
+</td></tr>
+
+<tr><td> Design Comes Primarily From </td><td>
+    Haskell Standardization Committee
+</td></tr>
+
+<tr><td> Pull Request Validation </td><td>
+    <input type="checkbox"> (Unsure) System Exists
+</td></tr>
+
+<tr><td> Contributor's License Agreement (CLA) </td><td>
+    <input type="checkbox"> None
+</td></tr>
+
+<tr><td> Release Rate, Open/Closed Bugs<br/>(indication of activeness) </td><td>
+    Great
+</td></tr>
+
+<!--######################################################-->
+<tr><td colspan="2"><span style="font-size:9pt">
+<b>Note:</b> Technical evaluation of language capabilities is not covered in this checklist, but in the
+<a href="https://github.com/BruceEckel/Language-Technical-Comparison">Language Technical Comparison</a> checklist.<br/>
+<i>Language Evaluation Checklist</i> by <a  href="http://www.MindviewInc.com">Bruce Eckel</a> is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Project hosted at <a href="https://github.com/BruceEckel/Language-Evaluation-Checklist">https://github.com/BruceEckel/Language-Evaluation-Checklist</a>.<br/>
+Suggestions welcome via
+<a href="https://github.com/BruceEckel/Language-Evaluation-Checklist/issues">issue report</a> or pull request.
+</span>
+</td></tr>
+</table>
+</body>
+</html>
